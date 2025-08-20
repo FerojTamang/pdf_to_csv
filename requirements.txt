@@ -1,6 +1,0 @@
-streamlit
-tabula-py
-pdfplumber
-pandas
-pytesseract
-Pillow
