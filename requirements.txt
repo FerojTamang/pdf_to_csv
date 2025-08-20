@@ -1,9 +1,6 @@
 streamlit
 tabula-py
-pandas
 pdfplumber
-pillow
+pandas
 pytesseract
-camelot-py
-opencv-python-headless
-numpy
+Pillow

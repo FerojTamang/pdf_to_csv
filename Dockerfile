@@ -7,6 +7,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     default-jre \
     && rm -rf /var/lib/apt/lists/*
 
+# Set Java memory limit (512MB works on Render free plan)
+ENV JAVA_TOOL_OPTIONS="-Xmx512m"
+
 # Set working directory
 WORKDIR /app
 
@@ -20,5 +23,5 @@ COPY . .
 # Expose Streamlit default port
 EXPOSE 8501
 
-# Run Streamlit, using Render's provided $PORT
+# Run Streamlit using Render's $PORT
 CMD ["sh", "-c", "streamlit run pdf_converter.py --server.address=0.0.0.0 --server.port $PORT"]
