@@ -1,0 +1,9 @@
+echo "streamlit
+tabula-py
+pandas
+pdfplumber
+pillow
+pytesseract
+camelot-py
+opencv-python-headless
+numpy" > requirements.txt
